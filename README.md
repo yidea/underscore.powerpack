@@ -12,4 +12,5 @@ _.format("<h1>%s, %s</h1>", "title", "1"); //= "<h1>title, 1 </h1>"
 
 ## TODO: 
 - add back mocha test env, more unit tests
-- add API doc 
+- add detailed API doc 
+- add CI
