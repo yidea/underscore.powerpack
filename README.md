@@ -8,4 +8,8 @@ Powerpack for underscore, made some addon to the pack which found useful in proj
 - add API doc 
 
 ## API
-- .format("<h1>%s, %s</h1>", "title", "1"); //= "<h1>title, 1 </h1>"
+
+- _.format(str) 
+```js
+_.format("<h1>%s, %s</h1>", "title", "1"); //= "<h1>title, 1 </h1>"
+```
