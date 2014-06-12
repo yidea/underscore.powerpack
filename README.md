@@ -1,7 +1,7 @@
 underscore.powerpack
 ====================
 
-Powerpack for underscore, made some addon to the pack which found useful in projects
+Powerpack for underscore.js, created some utils which found useful in projects
 
 ## API
 
