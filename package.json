@@ -1,0 +1,23 @@
+{
+  "name": "underscore.powerpack",
+  "version": "0.0.1",
+  "description": "Powerpack for underscore.js, created some utils which found useful in projects",
+  "main": "./lib/underscore.powerpack.js",
+  "scripts": {
+    "test": "./node_modules/.bin/testem"
+  },
+  "author": {
+    "name": "Yi Cao",
+    "email": "email4yi@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "chai": "~1.8.1",
+    "sinon": "~1.7.3",
+    "testem": "~0.5.12"
+  }
+}
