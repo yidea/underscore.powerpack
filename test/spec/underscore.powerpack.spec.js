@@ -1,3 +1,7 @@
+var _ = require("../../lib/underscore.powerpack");
+var expect = require('chai').expect;
+var sinon = require('sinon');
+
 describe("underscore.powerpack", function () {
 
   /***************** String helper *********************/

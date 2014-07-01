@@ -12,11 +12,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "underscore": "~1.6.0"
+    "underscore": "^1.6.0"
   },
   "devDependencies": {
-    "mocha": "~1.15.1",
+    "browserify": "^4.2.0",
     "chai": "~1.8.1",
+    "mocha": "~1.15.1",
     "sinon": "~1.7.3",
     "testem": "~0.5.12"
   }
