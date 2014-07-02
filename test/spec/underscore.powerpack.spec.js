@@ -8,15 +8,27 @@ describe("underscore.powerpack", function () {
   describe("String", function () {
     describe("_.format(str)", function () {
       it("should return '' in case str not set", function () {
-        expect(_.format()).to.be.equal("");
+        expect(_.format()).to.equal("");
       });
       it("should return string correctly in general case", function () {
-        expect(_.format("<h1>%s - %s</h1>", "23", "30")).to.be.equal("<h1>23 - 30</h1>");
-        expect(_.format("hello %s %s", 2, "world")).to.be.equal("hello 2 world");
+        expect(_.format("<h1>%s - %s</h1>", "23", "30")).to.equal("<h1>23 - 30</h1>");
+        expect(_.format("hello %s %s", 2, "world")).to.equal("hello 2 world");
       });
       it("should return string correctly in case where %s and arguments number not match", function () {
-        expect(_.format("<h1>%s</h1>", "23", "30")).to.be.equal("<h1>23</h1>");
-        expect(_.format("<h1>%s-%s</h1>", "23")).to.be.equal("<h1>23-</h1>");
+        expect(_.format("<h1>%s</h1>", "23", "30")).to.equal("<h1>23</h1>");
+        expect(_.format("<h1>%s-%s</h1>", "23")).to.equal("<h1>23-</h1>");
+      });
+    });
+    
+    describe("_.capitalize(str)", function () {
+      it("should return capitalized string in general cases", function () {
+        expect(_.capitalize("refurbished")).to.equal("Refurbished");
+        expect(_.capitalize("REFURBISHED")).to.equal("Refurbished");
+        expect(_.capitalize("Refurbished ")).to.equal("Refurbished ");
+      });
+      it("should throw error in cases str not set/valid", function () {
+        expect(_.capitalize).to.throw();
+        expect(_.capitalize.bind(null, 12)).to.throw();
       });
     });
 
@@ -24,7 +36,7 @@ describe("underscore.powerpack", function () {
       it("should return reversed array in general cases", function () {
         expect(_.reverse("walmart")).to.equal("tramlaw");
       });
-      it("should throw in cases str not set or not valid", function () {
+      it("should throw error in cases str not set or not valid", function () {
         expect(_.reverse).to.throw();
         expect(_.reverse.bind(null, 123)).to.throw();
       });

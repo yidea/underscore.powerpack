@@ -17,6 +17,14 @@ PS. tests will fail in phantomjs, becuase it doesn't support Funciton.prototype.
 ```js
 _.format("<h1>%s, %s</h1>", "title", "1"); //= "<h1>title, 1 </h1>"
 ```
+-  _.capitalize(str)
+- _.reverse(str)
+- _.trim(str)
+- _.removeWhitespace(str)
+- _.countBytesUTF8(str)
+
+- _.convertNumBase()
+```_.convertNumBase(0xDB7F)(16)(10); //352657
 
 ## Todo: 
 
