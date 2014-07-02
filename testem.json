@@ -1,8 +1,7 @@
 {
-  "framework": "mocha",
+  "framework": "mocha+chai",
   "serve_files": ["browserified.js"],
   "src_files": [
-    "node_modules/chai/chai.js",
     "node_modules/sinon/pkg/sinon-1.7.3.js",
     "node_modules/underscore/underscore.js",
     "lib/*.js",
